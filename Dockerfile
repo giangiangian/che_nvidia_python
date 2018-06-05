@@ -1,4 +1,4 @@
-FROM giangiangian/eclipse_che_gpu_dockerfile_base:9.1-devel-ubuntu16.04
+FROM giangiangian/eclipse_che_gpu_dockerfile_base:9.0-devel-ubuntu16.04
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /opt/conda/bin:$PATH
