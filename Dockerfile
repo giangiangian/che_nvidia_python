@@ -17,5 +17,7 @@ RUN sudo wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.4.10-Linu
     sudo ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "conda activate base" >> ~/.bashrc
+	
+RUN sudo chown -R user:user /opt/conda/
 
 RUN pip install tensorflow-gpu
